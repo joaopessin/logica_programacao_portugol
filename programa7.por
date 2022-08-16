@@ -11,8 +11,11 @@ programa
 			escreva("Digite o " + (i + 1) + "º nome: ")
 			leia(nome[i])
 		}
+
+		escreva("\n3º nome: " + nome[2])
 	}
 }
+
 
 /* $$$ Portugol Studio $$$ 
  * 
