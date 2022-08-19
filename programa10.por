@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro valor = 0
+		inteiro valor = 0, tabuada[10]
 
 		escreva("Informe o valor da tabuada: ")
 		leia(valor)
@@ -12,13 +12,16 @@ programa
 
 		para(inteiro i = 1; i <= 10; i++)
 		{
+			tabuada[(i - 1)] = (i * valor)
+			
 			escreva("\n")
-			escreva(i + " x " + valor + " = " + (i * valor))
+			escreva(i + " x " + valor + " = " + tabuada[(i - 1)])
 		}
 
 		escreva("\n")
 	}
 }
+
 
 /* $$$ Portugol Studio $$$ 
  * 
