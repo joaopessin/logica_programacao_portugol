@@ -21,7 +21,7 @@ programa
 			{
 				cadeia notasAlunos[5]
 				
-				escreva("Digite a " + (j + 1) + "ª nota: ")
+				escreva("Digite a " + j + "ª nota: ")
 				leia(notasAlunos[j])
 				
 				nomesNotasAlunos[i][j] = notasAlunos[j]
