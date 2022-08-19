@@ -17,7 +17,7 @@ programa
 
 			escreva("\n")
 
-				para(inteiro j = 1; j < 5; j++)	// Pular a 
+				para(inteiro j = 1; j < 5; j++)	// Pular a primeira posição, que será armazenado o nome (0)
 			{
 				cadeia notasAlunos[5]
 				
