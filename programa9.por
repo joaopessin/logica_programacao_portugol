@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nomesNotasAlunos[3][5]
+		cadeia nomesNotasAlunos[3][5]	// nome do aluno + 4 notas = 5 colunas por linha(aluno)
 
 		para(inteiro i = 0; i < 3; i++)
 		{
