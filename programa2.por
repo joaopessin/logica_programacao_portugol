@@ -1,13 +1,13 @@
 programa {
 	funcao inicio() {
-		// Loja de tintas: há três produtos para venda, dê essas opções para o usuário
+		// Loja de tintas: hÃ¡ trÃªs produtos para venda, dÃª essas opÃ§Ãµes para o usuÃ¡rio
 		
 		// Dados
 		inteiro tintaVermelha = 10, tintaVerde = 20, tintaAzul = 30
 		inteiro opcao = 0
 		
 		escreva("\"Loja de Tintas\"\n")
-		escreva("\nOpcões: \n1. Vermelha \n2. Verde \n3. Azul \n4. Sair\n")
+		escreva("\nOpcÃµes: \n1. Vermelha \n2. Verde \n3. Azul \n4. Sair\n")
 		
 		escreva("\nDigite sua escolha: ")
 		leia(opcao)
@@ -33,7 +33,7 @@ programa {
 		    pare
 		    
 		    caso contrario:
-		    escreva("Opção inválida!")
+		    escreva("OpÃ§Ã£o invÃ¡lida!")
 		}
 		
 		escreva("\n")
