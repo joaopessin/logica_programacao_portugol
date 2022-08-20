@@ -1,11 +1,11 @@
 programa {
 	funcao inicio() {
-		// Encontrar o menor número entre três, dados pelo usuário.
+		// Encontrar o menor nÃºmero entre trÃªs, dados pelo usuÃ¡rio.
 		
 		inteiro primeiroValor = 0, segundoValor = 0, terceiroValor = 0
 		inteiro menorValor = 0
 		
-		escreva("Escreva três números e irei revelar o menor entre eles: \n")
+		escreva("Escreva trÃªs nÃºmeros e irei revelar o menor entre eles: \n")
 		
 		escreva("\nPrimeiro: ")
 		leia(primeiroValor)
@@ -20,13 +20,13 @@ programa {
 		
 		se(primeiroValor < segundoValor e primeiroValor < terceiroValor)
 		{
-		    escreva("O menor valor é: " + primeiroValor)
+		    escreva("O menor valor Ã©: " + primeiroValor)
 		} senao se(segundoValor < primeiroValor e segundoValor < terceiroValor)
 		{
-		    escreva("O menor valor é: " + segundoValor)
+		    escreva("O menor valor Ã©: " + segundoValor)
 		} senao se(terceiroValor < primeiroValor e terceiroValor < segundoValor)
 		{
-		    escreva("O menor valor é: " + terceiroValor)
+		    escreva("O menor valor Ã©: " + terceiroValor)
 		}
 	}
 }
