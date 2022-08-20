@@ -3,25 +3,36 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro valor = 0, tabuada[10]
+		inteiro valorEscolhido = 0, tabuada[10][3], contador[10], resultado[10]
 
 		escreva("Informe o valor da tabuada: ")
-		leia(valor)
+		leia(valorEscolhido)
 
 		escreva("\n")
 
-		para(inteiro i = 1; i <= 10; i++)
+		se(valorEscolhido >= 1)
 		{
-			tabuada[(i - 1)] = (i * valor)
-			
-			escreva("\n")
-			escreva(i + " x " + valor + " = " + tabuada[(i - 1)])
+			para(inteiro k = 0; k < 10; k++)
+			{	
+				contador[k] = (k + 1)
+				resultado[k] = (k + 1) * valorEscolhido
+
+				tabuada[k][0] = contador[k]
+				tabuada[k][1] = valorEscolhido
+				tabuada[k][2] = resultado[k]
+			}
+
+			para(inteiro i = 0; i < 10; i++)
+			{
+				escreva("\n" + tabuada[i][0] + " x " + tabuada[i][1] + " = " + tabuada[i][2])
+			}
+		} senao {
+			escreva("Valor inválido!")
 		}
 
 		escreva("\n")
 	}
 }
-
 
 /* $$$ Portugol Studio $$$ 
  * 
