@@ -1,6 +1,6 @@
 programa {
 	funcao inicio() {
-		// Controlar quantidade de pesca. Caso acima de 50Kg, multa de R$4,00 por Kg acima da regulamentação.
+		// Controlar quantidade de pesca. Caso acima de 50Kg, multa de R$4,00 por Kg acima da regulamentaÃ§Ã£o.
 		real pescaKg
 		
 		escreva("Informe a quantidade de quilos pescados(Kg): ")
