@@ -6,19 +6,23 @@ programa
 		escreva("\"Tabela 5 x 5\"")
 		escreva("\n\n")
 		
-		inteiro tabela[5][5]
+		inteiro tabela[5][5], contador = 4
 
 		para(inteiro i = 0; i < 5; i++)
 		{
-			para(inteiro j = 0; j < 5; j++)
+			para(inteiro j = 4; j >= 0; j--)
 			{
-				se(i == j)
+				se(j == contador)
 				{
 					tabela[i][j] = 1
 				} senao {
 					tabela[i][j] = 0
-				}	
+				}
+
+				
 			}
+
+			contador--
 		}
 
 		para(inteiro k = 0; k < 5; k++)
@@ -38,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 432; 
+ * @POSICAO-CURSOR = 474; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {tabela, 9, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
