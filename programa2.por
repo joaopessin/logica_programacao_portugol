@@ -1,41 +1,49 @@
-programa {
-	funcao inicio() {
-		// Loja de tintas: há três produtos para venda, dê essas opções para o usuário
-		
-		// Dados
-		inteiro tintaVermelha = 10, tintaVerde = 20, tintaAzul = 30
-		inteiro opcao = 0
-		
-		escreva("\"Loja de Tintas\"\n")
-		escreva("\nOpcões: \n1. Vermelha \n2. Verde \n3. Azul \n4. Sair\n")
-		
-		escreva("\nDigite sua escolha: ")
-		leia(opcao)
-		
-		escreva("\n")
-		
-		escolha(opcao)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro valoresPares[3][3], semPar = 0
+
+		para(inteiro i = 0; i < 3; i++)
 		{
-		    caso 1:
-		    escreva("A tinta vermelha custa: R$" + tintaVermelha)
-		    pare
-		    
-		    caso 2:
-		    escreva("A tinta verde custa: R$" + tintaVerde)
-		    pare
-		    
-		    caso 3:
-		    escreva("A tinta azul custa: R$" + tintaAzul)
-		    pare
-		    
-		    caso 4:
-		    escreva("Finalizando programa...")
-		    pare
-		    
-		    caso contrario:
-		    escreva("Opção inválida!")
+			para(inteiro j = 0; j < 3; j++)
+			{
+				escreva("Informe o valor da posição " + (i + 1) + "x" + (j + 1) + ": ")
+				leia(valoresPares[i][j])
+			}
 		}
-		
-		escreva("\n")
+
+		escreva("\nValores pares: ")
+
+		para(inteiro k = 0; k < 3; k++)
+		{
+			para(inteiro l = 0; l < 3; l++)
+			{
+				se(valoresPares[k][l] % 2 == 0)
+				{	
+					escreva("[" + valoresPares[k][l] + "] ")
+				} senao {
+					semPar += 1
+				}
+			}
+		}
+
+		se(semPar == 9)
+		{
+			escreva("[0]")
+		}
 	}
 }
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 563; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
