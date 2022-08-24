@@ -4,6 +4,7 @@
     2_ Leia duas notas e mostre a média.
     3_ Leia o valor de dois produtos e mostre o mais caro e o mais barato.
     4_ Volte ao segundo exercício, dessa vez leia três notas do aluno, mostre a média e diga se ele foi aprovado ou não.
+    
   Exercícios Intermediários:
     1_ Leia o valor de três produtos e a nota com que o cliente vai pagar, se tiver troco, calcule e exiba para o usuário, se não, mostre que o valor está correto.
     2_ Peça para o usuário digitar dois números, forneça operações básicas (soma, subtração, multiplicação e divisão), peça para ele escolher uma e exiba o resultado.
