@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro tabelaNumeros[3][4], comparador = 0, numerosRepetidos = 0
+		inteiro tabela[2][3], aux = 0, repeticao = 0
 
 		para(inteiro i = 0; i < 2; i++)
 		{
@@ -11,7 +11,7 @@ programa
 			para(inteiro j = 0; j < 3; j++)
 			{
 				escreva("Informe o valor da posição " + i + "x" + j + ": ")
-				leia(tabelaNumeros[i][j])
+				leia(tabela[i][j])
 			}
 
 			escreva("\n")
@@ -21,44 +21,27 @@ programa
 		{
 			para(inteiro l = 0; l < 3; l++)
 			{
-				comparador = tabelaNumeros[k][l]
-
-				se(comparador == tabelaNumeros[k][(l + 1)])
+				para(inteiro m = 0; m < 2; m++)
 				{
-					numerosRepetidos += 1
-				} senao {
-					numerosRepetidos += 0
+					para(inteiro n = 0; n < 3; n++)
+					{
+						se(tabela[m][n] == tabela[k][l])
+						{
+							repeticao += 1
+						}
+					}
 				}
 			}
 		}
 
-		para(inteiro k = 0; k < 2; k++)
+
+		escreva("Existe números repetidos? ")
+
+		se(repeticao > 6)
 		{
-			para(inteiro l = 0; l < 3; l++)
-			{
-				comparador = tabelaNumeros[k][l]
-
-				se(comparador == tabelaNumeros[(k + 1)][l])
-				{
-					numerosRepetidos += 1
-				} senao {
-					numerosRepetidos += 0
-				}
-			}
+			escreva("\nSim!")
+		} senao {
+			escreva("\nNão!")
 		}
-
-		escreva("Quantidade de números repetidos: " + numerosRepetidos)
 	}
 }
-
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 885; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {tabelaNumeros, 6, 10, 13};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
